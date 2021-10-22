@@ -4,4 +4,5 @@ While digging through mbedOS documentation and related forums (thanks to user ha
 
 The implementation only uses mbedOS provided functions, is easy and blazing fast
 
+You should not use this combined with the simplified Arduino "Serial" library, it creates timing conflicts and the proportional readings are innacurate.
 I don't actively use or develop for the RP2040, this was made only for evaluation purposes
