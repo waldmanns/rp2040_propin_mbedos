@@ -68,11 +68,11 @@ void setup() {
 void edgeRise_ch1(void) {
     ch1.timer.reset();
     ch1.timer.start();
-    ch1.begin = ch1.timer.read_us();
+    ch1.begin = ch1.timer.elapsed_time().count();
 }
 
 void edgeFall_ch1(void) {
-    ch1.end = ch1.timer.read_us();
+    ch1.end = ch1.timer.elapsed_time().count();
     ch1.timer.stop();
     ch1.prop = ch1.end - ch1.begin;
 }
@@ -80,11 +80,11 @@ void edgeFall_ch1(void) {
 void edgeRise_ch2(void) {
     ch2.timer.reset();
     ch2.timer.start();
-    ch2.begin = ch2.timer.read_us();
+    ch2.begin = ch2.timer.elapsed_time().count();
 }
 
 void edgeFall_ch2(void) {
-    ch2.end = ch2.timer.read_us();
+    ch2.end = ch2.timer.elapsed_time().count();
     ch2.timer.stop();
     ch2.prop = ch2.end - ch2.begin;
 }
@@ -92,11 +92,11 @@ void edgeFall_ch2(void) {
 void edgeRise_ch3(void) {
     ch3.timer.reset();
     ch3.timer.start();
-    ch3.begin = ch3.timer.read_us();
+    ch3.begin = ch3.timer.elapsed_time().count();
 }
 
 void edgeFall_ch3(void) {
-    ch3.end = ch3.timer.read_us();
+    ch3.end = ch3.timer.elapsed_time().count();
     ch3.timer.stop();
     ch3.prop = ch3.end - ch3.begin;
 }
@@ -104,11 +104,11 @@ void edgeFall_ch3(void) {
 void edgeRise_ch4(void) {
     ch4.timer.reset();
     ch4.timer.start();
-    ch4.begin = ch4.timer.read_us();
+    ch4.begin = ch4.timer.elapsed_time().count();
 }
 
 void edgeFall_ch4(void) {
-    ch4.end = ch4.timer.read_us();
+    ch4.end = ch4.timer.elapsed_time().count();
     ch4.timer.stop();
     ch4.prop = ch4.end - ch4.begin;
 }
@@ -116,11 +116,11 @@ void edgeFall_ch4(void) {
 void edgeRise_ch5(void) {
     ch5.timer.reset();
     ch5.timer.start();
-    ch5.begin = ch5.timer.read_us();
+    ch5.begin = ch5.timer.elapsed_time().count();
 }
 
 void edgeFall_ch5(void) {
-    ch5.end = ch5.timer.read_us();
+    ch5.end = ch5.timer.elapsed_time().count();
     ch5.timer.stop();
     ch5.prop = ch5.end - ch5.begin;
 }
